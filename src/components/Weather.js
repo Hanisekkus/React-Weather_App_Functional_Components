@@ -235,7 +235,6 @@ const WeatherContainer = (props) => {
                     <StyledWeek>
                         {data.weather.daily.filter((event,index) => index!==0).map((data,index) => {
                             const infoDay=getInfoDay(index + 1)      
-                            console.log(data)
                             return(
                                 <StyledDay key={data.dt}>
                                     <StyledHeading2
