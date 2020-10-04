@@ -98,8 +98,6 @@ const GlobalStyle = createGlobalStyle`
         display:flex;
         flex-direction: column;
     }
-
-
 `
 
 const StyledMain = styled.main`
@@ -113,9 +111,9 @@ const App = () => {
         citySubmitted: "",
         cityLon: 0,
         cityLat: 0,
-        cityValidated: "Opava",
+        cityValidated: "",
         cityValidation: true,
-        dataLoaded: true,
+        dataLoaded: false,
     })
 
     const handleChange = event => {
